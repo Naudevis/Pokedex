@@ -9,7 +9,7 @@ const AnimeDetailsScreen = ({ route }: { route?: any }) => {
 
      return (
        <View style={styles.secondContainer}>
-         <Text style={styles.secondTitle}>You must select a anime</Text>
+         <Text style={styles.secondTitle}>You must select an anime</Text>
        </View>
      )  // Si no hay personaje, mostrar mensaje de carga
    } 
@@ -24,8 +24,8 @@ const AnimeDetailsScreen = ({ route }: { route?: any }) => {
         <Text style={styles.details}>Genres: {anime?.genres.map((genre) => genre.name).join(', ')}</Text>
 
         <Text style={styles.details}>Year: {anime?.year}</Text>
-        <Text style={styles.details}>rating: {anime?.rating}</Text>
-        <Text style={styles.details}>status: {anime?.status}</Text>
+        <Text style={styles.details}>Rating: {anime?.rating}</Text>
+        <Text style={styles.details}>Status: {anime?.status}</Text>
 
              
 

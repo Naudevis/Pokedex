@@ -34,7 +34,7 @@ const DrawerNavigator = ({ route }:{route:any}) => {
           backgroundColor: '#000000',
         },
         headerTintColor: '#fefbfb',
-        drawerActiveTintColor: '#0a803d',
+        drawerActiveTintColor: '#80760a',
         drawerInactiveTintColor: '#333',
         drawerLabelStyle: {
           fontSize: 16,
