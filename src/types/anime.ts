@@ -9,4 +9,6 @@ export interface Anime{
             image_url:string;
         }
     }
+    genres: { name: string }[];
+
 }

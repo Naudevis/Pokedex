@@ -94,7 +94,7 @@ export default StyleSheet.create({
     AnimeCard: {
         marginBottom: 10,
         padding: 10,
-        backgroundColor: 'white',
+        backgroundColor: '#e1e1e1',
         borderRadius: 10
     },
     AnimeImg: {

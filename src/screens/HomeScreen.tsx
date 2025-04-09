@@ -10,7 +10,6 @@ const HomeScreen = ({ route }: any) => {
   return (
     <View style={styles.container} >
       <Text style={styles.title} >Welcome, {name} </Text>
-      <FontAwesome name="user" size={25} color={"red"}/>
       <Image source={{uri:"https://i.redd.it/rest-in-peace-akira-toriyama-the-creator-of-dragon-ball-and-v0-ephidluarbnc1.png?width=1080&format=png&auto=webp&s=6cbf3d29fed3bca8a18921b0a6853927d4fba203"}} style={styles.image}></Image>
     </View>
   )

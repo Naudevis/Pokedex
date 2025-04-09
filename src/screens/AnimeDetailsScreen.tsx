@@ -1,9 +1,10 @@
 import React from 'react'
 import { Button, Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Anime } from '../types/anime';
 
 
 const AnimeDetailsScreen = ({ route }: { route?: any }) => {
-  const { anime } = route.params || {}; // Recibir el personaje desde los parámetros
+  const { anime }: { anime: Anime }  = route?.params || {}; // Recibir el personaje desde los parámetros
    if (!anime){
 
      return (
@@ -17,12 +18,16 @@ const AnimeDetailsScreen = ({ route }: { route?: any }) => {
       
       <View   style={{padding:20,backgroundColor:'#dedfe2',borderRadius:10,shadowColor:'black',shadowRadius:10}}>
         {/* Aquí se mostrará la información del personaje */}
-        {/* <Image source={{uri: anime?. }} style={{width: "auto", height: 170}} /> */}
+        <Image source={{uri: anime?.images?.jpg?.image_url }} style={{width: "auto", height: 400}} />
 
         <Text style={styles.title}>Anime: {anime?.title}</Text>
+        <Text style={styles.details}>Genres: {anime?.genres.map((genre) => genre.name).join(', ')}</Text>
+
         <Text style={styles.details}>Year: {anime?.year}</Text>
         <Text style={styles.details}>rating: {anime?.rating}</Text>
         <Text style={styles.details}>status: {anime?.status}</Text>
+
+             
 
       </View>
     </ScrollView>
